@@ -26,6 +26,8 @@ npm run dev
 
 The backend will start on **port 3000** (or as configured in your app).
 
+To change default port change PORT variable in src/index.ts
+
 ### Frontend
 
 ```bash
@@ -35,3 +37,11 @@ npm run dev
 ```
 
 The frontend will start on **port 5173** (default Vite dev server port) or as configured.
+
+To change default port add this code in vite.config.ts inside defineConfig
+
+```bash
+server: {
+    port: {your desired port},
+}
+```
