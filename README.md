@@ -45,3 +45,5 @@ server: {
     port: {your desired port},
 }
 ```
+
+If you changed the port for the BE application you need to define it in src/config.ts
