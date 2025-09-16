@@ -22,6 +22,7 @@ const ActivityDegreeChart: React.FC = () => {
             return { name: a.NodeId, value: count };
         });
 
+        //sort by count descending
         degrees = degrees.sort((a, b) => b.value - a.value);
 
         newChart.setOption({

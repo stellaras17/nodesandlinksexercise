@@ -29,7 +29,7 @@ const GanttChart: React.FC = () => {
             (a, b) => Number(a.NodeId) - Number(b.NodeId)
         );
 
-        const seriesData = sortedActivities.map((a, i) => {
+        const seriesData = sortedActivities.map((a) => {
             const start = getTimestampFromDateString(a.StartDate);
             const end = getTimestampFromDateString(a.EndDate);
             return {
